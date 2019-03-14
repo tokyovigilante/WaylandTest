@@ -1,4 +1,4 @@
-// swift-tools-version:5.git c0
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
@@ -17,7 +17,8 @@ let package = Package(
              dependencies: []),
         .target(
             name: "Airframe",
-            dependencies: ["CWaylandClient",
+            dependencies: [
+                "CWaylandClient",
                 "XDGShell",]),
         .target(
             name: "WaylandTest",
